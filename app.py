@@ -18,7 +18,10 @@ def main():
   st.markdown(html_temp,unsafe_allow_html=True)
   num1 = st.number_input("Number 1")
   result="none"
-  if num1%2==0:
+  num2=int(num1)
+  if num2!=num1:
+    result="Neither odd nor even as it is not a whole number."
+  elif num1%2==0:
     result = "Even"
   else:
     result="Odd"
